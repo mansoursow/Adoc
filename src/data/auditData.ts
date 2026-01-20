@@ -1705,11 +1705,11 @@ const programs: AuditProgram[] = [
   id: "OS31",
   title: "Évaluer la formalisation globale du dispositif de contrôle interne des recettes",
   category: "Contrôle Interne",
-  objective:
+  objectives : [
     "S’assurer que :\n" +
     "- le dispositif de contrôle interne des recettes est formalisé\n" +
     "- les procédures sont documentées et cohérentes\n" +
-    "- les responsabilités sont clairement définies",
+    "- les responsabilités sont clairement définies"],
   steps: [
     {
       id: 1,
@@ -1753,11 +1753,11 @@ const programs: AuditProgram[] = [
   id: "OS32",
   title: "Confrontation données de sortie système ↔ recettes réelles",
   category: "Systèmes SI",
-  objective:
+  objectives: [
     "S’assurer que :\n" +
     "- les états de sortie du système concordent avec les recettes réelles\n" +
     "- les contrôles de cohérence sont effectifs\n" +
-    "- les écarts sont expliqués et justifiés",
+    "- les écarts sont expliqués et justifiés"],
   steps: [
     {
       id: 1,
@@ -1801,11 +1801,11 @@ const programs: AuditProgram[] = [
   id: "OS33",
   title: "Exhaustivité des transactions prises en compte par le système central",
   category: "Systèmes SI",
-  objective:
+  objectives: [
     "S’assurer que :\n" +
     "- toutes les transactions sont centralisées\n" +
     "- les contrôles d’exhaustivité sont effectifs\n" +
-    "- les pertes de données sont détectées",
+    "- les pertes de données sont détectées"],
   steps: [
     {
       id: 1,
@@ -1849,11 +1849,11 @@ const programs: AuditProgram[] = [
   id: "OS34",
   title: "Délais de mise à jour des données après transactions",
   category: "Systèmes SI",
-  objective:
+  objectives : [
     "S’assurer que :\n" +
     "- les délais de mise à jour sont maîtrisés\n" +
     "- les retards sont détectés\n" +
-    "- l’impact sur le reporting est limité",
+    "- l’impact sur le reporting est limité"],
   steps: [
     {
       id: 1,
@@ -1897,11 +1897,11 @@ const programs: AuditProgram[] = [
   id: "OS35",
   title: "Plan de continuité et résilience du système de gestion des transactions",
   category: "Systèmes SI",
-  objective:
+  objectives : [
     "S’assurer que :\n" +
     "- un PCA existe\n" +
     "- des tests sont réalisés\n" +
-    "- la reprise d’activité est maîtrisée",
+    "- la reprise d’activité est maîtrisée"],
   steps: [
     {
       id: 1,
@@ -1952,12 +1952,12 @@ const programs: AuditProgram[] = [
   id: "OS36",
   title: "Sauvegarde, sécurisation et intégrité des données du système de transactions",
   category: "Systèmes SI",
-  objective:
+  objectives :[
     "S’assurer que :\n" +
     "- les données critiques sont sauvegardées régulièrement\n" +
     "- les accès sont sécurisés et maîtrisés\n" +
     "- les restaurations sont testées\n" +
-    "- les incidents de sécurité sont suivis",
+    "- les incidents de sécurité sont suivis"],
   steps: [
     {
       id: 1,
@@ -2001,11 +2001,11 @@ const programs: AuditProgram[] = [
   id: "OS37",
   title: "Fiabilité des intrants et extrants de l’application informatique des recettes",
   category: "Systèmes SI",
-  objective:
+  objectives: [
     "S’assurer que :\n" +
     "- les données en entrée sont complètes et fiables\n" +
     "- les traitements sont cohérents\n" +
-    "- les données de sortie sont exactes",
+    "- les données de sortie sont exactes"],
   steps: [
     {
       id: 1,
@@ -2049,11 +2049,11 @@ const programs: AuditProgram[] = [
   id: "OS38",
   title: "Conformité RH : contrats, salaires, charges sociales et droits des travailleurs",
   category: "Audit administratif",
-  objective:
+  objectives : [
     "S’assurer que :\n" +
     "- les obligations légales et conventionnelles RH sont respectées\n" +
     "- les dossiers du personnel sont complets\n" +
-    "- la paie et les charges sont conformes",
+    "- la paie et les charges sont conformes"],
   steps: [
     {
       id: 1,
@@ -2097,11 +2097,11 @@ const programs: AuditProgram[] = [
   id: "OS39",
   title: "Conformité aux exigences administratives et contractuelles",
   category: "Audit administratif",
-  objective:
+  objectives: [
     "S’assurer que :\n" +
     "- les exigences du contrat sont respectées\n" +
     "- un dispositif de suivi contractuel existe\n" +
-    "- les manquements sont identifiés",
+    "- les manquements sont identifiés"],
   steps: [
     {
       id: 1,
@@ -2145,11 +2145,11 @@ const programs: AuditProgram[] = [
   id: "OS40",
   title: "Respect des obligations de reporting contractuel",
   category: "Audit administratif",
-  objective:
+  objectives: [
     "S’assurer que :\n" +
     "- les reportings exigés sont produits\n" +
     "- les délais et formats sont respectés\n" +
-    "- les manquements sont suivis",
+    "- les manquements sont suivis"],
   steps: [
     {
       id: 1,
@@ -2201,11 +2201,11 @@ const programs: AuditProgram[] = [
   title:
     "Respect des dispositions légales, réglementaires et conventionnelles dans l’exécution du contrat",
   category: "Audit administratif",
-  objective:
+  objectives: [
     "S’assurer que :\n" +
     "- les textes applicables sont identifiés et respectés\n" +
     "- un dispositif de conformité et de veille existe\n" +
-    "- les non-conformités et risques sont détectés, analysés et traités",
+    "- les non-conformités et risques sont détectés, analysés et traités"],
   steps: [
     {
       id: 1,
@@ -2251,11 +2251,11 @@ const programs: AuditProgram[] = [
   id: "OS42",
   title: "Suivi des indicateurs de performance contractuels (KPI)",
   category: "Audit organisationnel",
-  objective:
+  objectives: [
     "S’assurer que :\n" +
     "- les KPI contractuels sont définis, suivis et pilotés\n" +
     "- les données sources utilisées sont fiables\n" +
-    "- les écarts objectifs/réalisations sont analysés et font l’objet d’actions",
+    "- les écarts objectifs/réalisations sont analysés et font l’objet d’actions"],
   steps: [
     {
       id: 1,
@@ -2300,11 +2300,11 @@ const programs: AuditProgram[] = [
   id: "OS43",
   title: "Qualité de la gestion du personnel dédié à l’exploitation",
   category: "Audit organisationnel",
-  objective:
+  objectives: [
     "S’assurer que :\n" +
     "- les effectifs/compétences sont adaptés\n" +
     "- la formation, supervision et continuité de service sont assurées\n" +
-    "- les dysfonctionnements RH opérationnels sont identifiés et traités",
+    "- les dysfonctionnements RH opérationnels sont identifiés et traités"],
   steps: [
     {
       id: 1,
@@ -2350,11 +2350,11 @@ const programs: AuditProgram[] = [
   title:
     "Adéquation de l’organigramme, des effectifs, des compétences et de la répartition des responsabilités",
   category: "Audit organisationnel",
-  objective:
+  objectives: [
     "S’assurer que :\n" +
     "- l’organisation est adaptée aux missions\n" +
     "- les effectifs/compétences sont suffisants\n" +
-    "- les rôles et responsabilités sont clairement définis et séparés",
+    "- les rôles et responsabilités sont clairement définis et séparés"],
   steps: [
     {
       id: 1,
@@ -2399,11 +2399,11 @@ const programs: AuditProgram[] = [
   id: "OS45",
   title: "Disponibilité et affectation des moyens matériels et logistiques",
   category: "Audit organisationnel",
-  objective:
+  objectives: [
     "S’assurer que :\n" +
     "- les moyens matériels/logistiques critiques sont disponibles\n" +
     "- la maintenance/gestion est organisée\n" +
-    "- les contraintes matérielles affectant la performance sont identifiées",
+    "- les contraintes matérielles affectant la performance sont identifiées"],
   steps: [
     {
       id: 1,
