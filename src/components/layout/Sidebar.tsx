@@ -1,25 +1,55 @@
 // src/components/layout/Sidebar.tsx
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-// Il faut bien "export default function"
 export default function Sidebar() {
+  const location = useLocation();
+
+  const linkBase =
+    "p-3 rounded-lg transition-colors font-medium";
+  const linkActive =
+    "bg-blue-700 text-white shadow-sm font-bold";
+  const linkInactive =
+    "hover:bg-slate-800 text-white";
+
   return (
     <aside className="w-64 bg-slate-900 text-white min-h-screen p-6 shadow-xl">
       <div className="text-xl font-bold mb-10 border-b border-slate-700 pb-4">
         AUDIT MATRIX
       </div>
+
       <nav className="flex flex-col gap-4">
-        <Link 
-          to="/" 
-          className="p-3 hover:bg-slate-800 rounded-lg transition-colors font-medium"
+        {/* Dashboard */}
+        <Link
+          to="/"
+          className={`${linkBase} ${
+            location.pathname === "/" ? linkActive : linkInactive
+          }`}
         >
           Dashboard
         </Link>
-        <Link 
-          to="/matrix" 
-          className="p-3 hover:bg-blue-600 bg-blue-700 rounded-lg transition-colors font-bold text-white shadow-sm"
+
+        {/* Matrice */}
+        <Link
+          to="/matrix"
+          className={`${linkBase} ${
+            location.pathname.startsWith("/matrix")
+              ? linkActive
+              : linkInactive
+          }`}
         >
-          Matrice d'Audit
+          Matrice d’Audit
+        </Link>
+
+        {/* ✅ Normes d'audit */}
+        <Link
+          to="/normes-audit"
+          className={`${linkBase} ${
+            location.pathname.startsWith("/normes-audit")
+              ? linkActive
+              : linkInactive
+          }`}
+        >
+          Normes d’audit
         </Link>
       </nav>
     </aside>

@@ -2,8 +2,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import AppLayout from '../layouts/AppLayout';
 import MatrixPage from '../pages/Matrix/MatrixPage';
-
-// Chemin corrigé avec le sous-dossier
+import NormesAuditPage from '../pages/NormesAudit/NormesAuditPage';
+import DashboardPage from '../pages/Dashboard/DashboardPage';
 import ControlProgramPage from '../pages/ControlProgram/ControlProgramPage';
 
 export const router = createBrowserRouter([
@@ -11,9 +11,10 @@ export const router = createBrowserRouter([
     path: "/",
     element: <AppLayout />,
     children: [
-      { path: "/", element: <div className="p-8">Sélectionnez une option dans le menu.</div> },
+      { index: true, element: <DashboardPage /> }, // ✅ IMPORTANT
       { path: "matrix", element: <MatrixPage /> },
-      { path: "os/:osId/program", element: <ControlProgramPage /> }
+      { path: "os/:osId/program", element: <ControlProgramPage /> },
+      { path: "normes-audit", element: <NormesAuditPage /> }
     ]
   }
 ]);
