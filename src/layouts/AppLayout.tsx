@@ -1,7 +1,7 @@
 // src/layouts/AppLayout.tsx
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../components/layout/Sidebar'; // Pas d'accolades ici !
-import adocLogo from "../assets/adoc-logo.PNG";
+import adocLogo from "../assets/adoc-logo.png";
 
 
 export default function AppLayout() {
